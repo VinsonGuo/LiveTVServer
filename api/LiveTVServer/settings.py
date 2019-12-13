@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'live',  # 数据库名，先前创建的
         'USER': 'root',     # 用户名，可以自己创建用户
         'PASSWORD': 'guoziwei',  # 密码
-        'HOST': '127.0.0.1',  # mysql服务所在的主机ip
+        'HOST': 'db',  # mysql服务所在的主机ip
         'PORT': '3306',         # mysql服务端口
     }
 }
@@ -122,4 +122,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 STATIC_URL = '/static/'
